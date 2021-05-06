@@ -5,11 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIrst Assignment in AcademyXi</title>
-    <link type="stylesheet" href="./style.css">
-    <link type="javascript" href="./ass1.js">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
 </head>
 <body>
-    <h1>After the border is open, where do you want to visit?</h1>
-    
+    <div id ="header">
+        <div id="logo">
+            <a href="#">Qantaz</a>
+        </div>
+        <ui id='menu'>
+            <li><a href="#">BOOKING</a></li>
+            <li><a href="#">SCHEDULE</a></li>
+            <li><a href="#">Q&A</a></li>
+            <li><a href="#">CONTACT</a></li>  
+        </ui>
+        <ul id="icons">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>           
+        </ul>
+        <a href="#" class="toggleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+
+    <div>    
+        <h1>Select Destination</h1>
+    </div>   
+    <div>
+        <ul>
+            <ul id = "countries">
+                <li><input type="radio" name="country" value="UK">UK</li>
+                <li><input type="radio" name="country" value="France">France</li>
+                <li><input type="radio" name="country" value="Germany">Germany</li>
+                <li><input type="radio" name="country" value="Italy">Italy</li>
+                <li><input type="radio" name="country" value="Greece">Greece</li>
+            </ul>
+        </ul>
+    </div>
+    <div>    
+        <h1>Select Class</h1>
+    </div>   
+    <div>
+        <ul>
+            <ul id = "Class">
+                <li><input type="radio" name="class" value="First">First</li>
+                <li><input type="radio" name="class" value="Business">Business</li>
+                <li><input type="radio" name="class" value="Economy">Economy</li>
+            </ul>
+        </ul>
+    </div> 
+    <div>    
+        <h1>Departure Date</h1>
+    </div>     
+    <div>
+        <ul>
+            <ul id = "DepartureDate">
+                <input type="text" name="date" value="DD">
+                <input type="text" name="month" value="MM">
+                <input type="text" name="year" value="YYYY">
+            </ul>
+        </ul>
+    </div>  
+    <div style="text-align: center;">
+        <input id="button" type="button" name="submit" value="BOOK">
+    </div>
 </body>
 </html>
+
+<script src="./javascript.js" ></script>
